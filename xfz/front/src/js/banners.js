@@ -86,7 +86,7 @@ Banners.prototype.addRemoveBannerEvent = function (bannerItem) {
         var bannerId = bannerItem.attr('data-banner-id');
         if(bannerId){
             xfzalert.alertConfirm({
-                'text': '您确定要删除这个轮播图吗?',
+                'text': '您确定要删除这个轮播图吗',
                 'confirmCallback': function () {
                     xfzajax.post({
                         'url': '/cms/delete_banner/',
