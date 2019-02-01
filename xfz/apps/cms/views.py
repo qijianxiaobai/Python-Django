@@ -214,6 +214,8 @@ def delete_news_category(request):
 def banners(request):
     return render(request,'cms/banners.html')
 
+def dashboard(request):
+    return render(request,'cms/dashboard.html')
 
 def banner_list(request):
     banners = Banner.objects.all()
